@@ -1,4 +1,5 @@
 import json
+import os
 
 try:
     import docx  # type: ignore[import-not-found]
@@ -26,7 +27,7 @@ from ai import analyze_resume
 from db import Base, SessionLocal, engine
 
 app = Flask(__name__)
-app.secret_key = "secret123"
+app.secret_key = os.getenv("SECRET_KEY")
 
 with app.app_context():
     Base.metadata.create_all(bind=engine)

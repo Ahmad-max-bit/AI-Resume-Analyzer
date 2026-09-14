@@ -1,10 +1,12 @@
+import os
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
-DATABASE_URL = (
-    "mysql+pymysql://2GextZHcx7NaoLC.root:vg5VNus3qKGeJdkK"
-    "@gateway01.us-east-1.prod.aws.tidbcloud.com:4000/test"
-)
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL is not set")
 
 engine = create_engine(
     DATABASE_URL,
