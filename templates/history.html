@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>History</h2>
+
+{% for report in reports %}
+
+<div class="card">
+
+```
+<h3>Resume</h3>
+<p>{{ report["resume"] }}</p>
+
+<h3>Skills</h3>
+<ul>
+    {% for s in report["result"].get("skills", []) %}
+    <li>{{ s }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Missing Skills</h3>
+<ul>
+    {% for s in report["result"].get("missing_skills", []) %}
+    <li>{{ s }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Road Map</h3>
+<ul>
+    {% for s in report["result"].get("Roadmap", []) %}
+    <li>{{ s }}</li>
+    {% endfor %}
+</ul>
+
+<h3>Interview Questions List</h3>
+<ul>
+    {% for s in report["result"].get("interview_questions", []) %}
+    <li>{{ s }}</li>
+    {% endfor %}
+</ul>
+```
+
+</div>
+
+{% else %}
+
+<p>No analysis history found.</p>
+
+{% endfor %}
+
+{% endblock %}

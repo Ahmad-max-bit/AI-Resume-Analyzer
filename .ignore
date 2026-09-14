@@ -1,0 +1,8 @@
+password = vg5VNus3qKGeJdkK
+
+
+mysql+mysqldb://2GextZHcx7NaoLC.root:vg5VNus3qKGeJdkK@gateway01.us-east-1.prod.aws.tidbcloud.com:4000/test?ssl_mode=VERIFY_IDENTITY&ssl_ca=<CA_PATH>
+
+.env
+.venv/
+__pycache__/

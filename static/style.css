@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+margin: 0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color:#ddd;
+color: #1a1a1a;
+}
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 38px;
+}
+.auth-card {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+    margin-bottom: 5px;
+}
+
+.sub-text {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.auth-card input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.auth-card button {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    background: #111827;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.auth-card button:hover{
+    background: #2563eb;
+}
+
+.auth-links a {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.switch-auth {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    color: white;
+    padding: 17px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #15223d;
+}
+
+header h1 {
+    display: inline;
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    color: #cdb5f5;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+main {
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input[file="file"],
+input[file="text"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+input[name="role"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+ul {
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    background: #e5e7eb;
+}
